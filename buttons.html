@@ -8,9 +8,17 @@
 		border: none;
 		font-size: 16px;
 		padding: 10px 20px; /* Space around text */
-		border-radius: 5px;
+		border-radius: 4px;
 		cursor: pointer; /* Change cursor to pointer on hover */
+		transition: opacity 0.2s; /* Smooth transition on hover */
 	}
+	.subscribe-button:hover {
+		opacity: 0.7; /* Change opacity on hover */
+	}
+	.subscribe-button:active {
+		opacity: 0.4; /* Change opacity on click */
+	}
+
 	.join-button {
 		background-color: white;
 		color: rgb(45, 94, 204);
@@ -20,7 +28,16 @@
 		padding: 10px 15px;
 		border-radius: 3px;
 		cursor: pointer;
+		transition: background-color 0.2s, color 0.2s;
 	}
+	.join-button:hover {
+		background-color: rgb(45, 94, 204);
+		color: white;
+	}
+	.join-button:active {
+		opacity: 0.8;
+	}
+
 	.tweet-button {
 		background-color: rgb(29, 161, 242);
 		color: white;
@@ -30,6 +47,10 @@
 		padding: 10px 20px;
 		border-radius: 30px;
 		cursor: pointer;
+		transition: box-shadow 0.2s;
+	}
+	.tweet-button:hover {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add shadow on hover: shadow height/width/blur, colour */
 	}
 </style>
 
