@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pong</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #F6E0A8;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		header {
+			background-color: #1E275A;
+			color: white;
+			padding: 10px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo .icon {
+			width: 24px;
+			height: 24px;
+			margin-right: 10px;
+		}
+
+		.menu a {
+			color: white;
+			text-decoration: none;
+			margin: 0 10px;
+			font-size: 16px;
+			padding: 10px;
+			display: inline-block;
+			background-color: #1E275A;
+			transition: background-color 0.3s;
+		}
+
+		.menu a:hover {
+			background-color: #0C123D;
+		}
+
+		.power-button {
+			font-size: 20px;
+		}
+
+		main {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.content {
+			text-align: center;
+		}
+
+		.play-button {
+			padding: 15px 40px;
+			font-size: 24px;
+			background-color: #1E275A;
+			color: white;
+			border: none;
+			cursor: pointer;
+			border-radius: 50px;
+			transition: background-color 0.3s, opacity 0.1s;
+		}
+
+		.play-button:hover {
+			background-color: #343D72;
+		}
+
+		.play-button:active {
+			opacity: 0.7;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="bol.png" alt="Pong Icon" class="icon">
+			<span>Pong</span>
+		</div>
+		<nav class="menu">
+			<a href="#">Home</a>
+			<a href="#">Play</a>
+			<a href="#">About</a>
+			<a href="#">Profile</a>
+			<a href="#" class="power-button">Log out</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="content">
+			<button class="play-button">Quick Play</button>
+		</div>
+	</main>
+</body>
+</html>
