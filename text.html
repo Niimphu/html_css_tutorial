@@ -11,12 +11,36 @@
 	}
 	.video-stats {
 		font-size: 16px;
+		font-weight: bold;
 		color: rgb(96, 96, 96);
 		margin: 1px;
 	}
 	.channel {
-		font-size: 16px;
+		margin: 1px;
+		float: left;
+	}
+	.channel-name {
+		font-size: 18x;
 		color: rgb(96, 96, 96);
+		margin: 1px;
+	}
+	.channel-info {
+		font-size: 14px;
+		color: rgb(96, 96, 96);
+		margin: 1px;
+	}
+	.subscribe-button {
+		background-color: rgb(233, 0, 0); 
+		color: white; /* Text color */
+		border: none;
+		font-size: 12px;
+		padding: 6px 8px; /* Space around text */
+		border-radius: 4px;
+		cursor: pointer; /* Change cursor to pointer on hover */
+		transition: opacity 0.2s; /* Smooth transition on hover */
+	}
+	.subscribe-button:hover {
+		opacity: 0.7; /* Change opacity on hover */
 	}
 </style>
 
@@ -24,10 +48,22 @@
 	How to finish ft_transcendence in 24 hours!
 </p>
 
-<p class="video-stats">
-	69B views &#183; 2 seconds ago
+
+<p>
+	<p class="channel">
+		<p class="channel-name">
+			Guillaume
+		</p>
+		<p class="channel-info">
+			420M subscribers
+		</p>
+	</p>
+	<button class="subscribe-button">
+		SUBSCRIBE
+	</button>
 </p>
 
-<p class="channel">
-	Guillaume
+
+<p class="video-stats">
+	69B views &#183; 2 seconds ago
 </p>
