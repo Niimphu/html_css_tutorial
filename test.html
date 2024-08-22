@@ -3,22 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pong</title>
+	<title>Lecker Schmecker</title>
 	<style>
+		button {
+			font-family: Courier New, Courier, monospace;
+		}
+
 		body {
-			font-family: Arial, sans-serif;
+			font-family: Courier New, Courier, monospace;
 			margin: 0;
 			padding: 0;
-			background-color: #F6E0A8;
+			background-color: #9C8BC6;
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
 		}
 
 		header {
-			background-color: #1E275A;
+			background-color: #3E2678;
 			color: white;
-			padding: 10px 20px;
+			padding: 0px 20px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -38,21 +42,21 @@
 		.menu a {
 			color: white;
 			text-decoration: none;
-			margin: 0 10px;
+			margin: 0px;
 			font-size: 16px;
 			padding: 10px;
 			display: inline-block;
-			background-color: #1E275A;
+			background-color: #3E2678;
 			transition: background-color 0.3s;
 		}
 
 		.menu a:hover {
-			background-color: #0C123D;
+			background-color: #28125E;
 		}
 
-		.power-button {
+		/* .logout-button {
 			font-size: 20px;
-		}
+		} */
 
 		main {
 			flex: 1;
@@ -68,7 +72,7 @@
 		.play-button {
 			padding: 15px 40px;
 			font-size: 24px;
-			background-color: #1E275A;
+			background-color: #28125E;
 			color: white;
 			border: none;
 			cursor: pointer;
@@ -77,7 +81,7 @@
 		}
 
 		.play-button:hover {
-			background-color: #343D72;
+			background-color: #3E2678;
 		}
 
 		.play-button:active {
@@ -93,11 +97,7 @@
 			<span>Pong</span>
 		</div>
 		<nav class="menu">
-			<a href="#">Home</a>
-			<a href="#">Play</a>
-			<a href="#">About</a>
-			<a href="#">Profile</a>
-			<a href="#" class="power-button">Log out</a>
+			<a href="#home">Home</a><a href="#play">Play</a><a href="#about">About</a><a href="#profile">Profile</a><a href="#logout" class="logout-button">Log out</a>
 		</nav>
 	</header>
 
